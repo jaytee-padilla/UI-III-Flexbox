@@ -149,18 +149,24 @@ h5 {
   margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/* Enter your code below */
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 900px;
+  height: auto;
   margin: 0 auto;
+}
+hr {
+  margin-bottom: 20px;
 }
 header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: fixed;
-  width: 900px;
-  background-color: lightblue;
+  width: 902px;
+  height: 100px;
 }
 nav ul {
   display: flex;
@@ -171,50 +177,60 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: lightgrey;
 }
-#hero-section {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 80px;
-  margin-bottom: 50px;
+main {
+  line-height: 1.3em;
 }
-#hero-section #innovation {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 60px;
+.services-header-img {
+  width: 100%;
 }
-#hero-section button {
-  display: flex;
-  align-self: center;
-  border: 1px solid black;
-  padding: 8px 45px;
-  font-size: 15px;
+#services {
+  margin: 40px 0;
 }
-#main-content {
+#services h1 {
+  font-size: 1.8em;
+}
+#cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.section-content-top {
+.card {
   display: flex;
   flex-direction: column;
-  width: 425px;
-  margin-top: 25px;
+  justify-content: space-evenly;
+  width: 420px;
+  height: 250px;
+  margin: 20px 0;
+  padding: 25px;
+  background-color: #f4f3f4;
+  border: 1px solid black;
 }
-#middle-img {
-  margin: 50px auto;
+.card button {
+  align-self: flex-start;
+  margin-top: 15px;
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: 1px solid black;
 }
-.section-content-bottom {
+#facts {
   display: flex;
-  flex-direction: column;
-  width: 285px;
-  margin-bottom: 25px;
-}
-address {
+  justify-content: space-between;
   margin-top: 40px;
+}
+#facts-content {
+  display: flex;
+  flex-direction: column;
+  height: 275px;
+  width: 400px;
+}
+#facts-content ul {
+  margin-top: 20px;
+}
+#facts-content ul li {
+  list-style-type: square;
+  list-style-position: inside;
 }
 #copyright {
   padding: 100px;
